@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ghboot"
+version = "0.1.0"
+description = "Bootstrap an empty directory into a git repo with a GitHub remote"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+ghboot = "ghboot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ghboot*"]
