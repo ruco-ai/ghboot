@@ -6,8 +6,32 @@ build-backend = "setuptools.build_meta"
 name = "ghboot"
 version = "0.1.0"
 description = "Bootstrap an empty directory into a git repo with a GitHub remote"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "ruco", email = "info@ruco.pt" }]
 requires-python = ">=3.10"
 dependencies = []
+keywords = ["git", "github", "bootstrap", "cli", "devtools", "repo", "init"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Version Control :: Git",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/ruco-ai/ghboot"
+Repository = "https://github.com/ruco-ai/ghboot"
+"Bug Tracker" = "https://github.com/ruco-ai/ghboot/issues"
 
 [project.scripts]
 ghboot = "ghboot.cli:main"
